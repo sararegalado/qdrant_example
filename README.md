@@ -1,5 +1,12 @@
+# Qdrant con Docker
 
-# 1. Ejecutar Qdrant con volumen persistente (crea carpeta automáticamente)
+Este proyecto incluye una guía rápida para ejecutar y administrar **Qdrant** dentro de un contenedor **Docker** con persistencia de datos.
+
+---
+
+## 🚀 1. Iniciar Qdrant con volumen persistente
+El siguiente comando iniciará Qdrant en segundo plano y montará un volumen local (`./qdrant_data`) para almacenar los datos de manera persistente:
+
 ```bash
 docker run -d \
   --name qdrant \
@@ -7,21 +14,3 @@ docker run -d \
   -p 6334:6334 \
   -v ./qdrant_data:/qdrant/storage \
   qdrant/qdrant:latest
-
-
-# 2. Para detener Qdrant
-```bash
-docker stop qdrant
-
-# 3. Para reiniciar Qdrant (mantiene los datos)
-```bash
-docker start qdrant
-
-
-# 4. Para eliminar el contenedor (los datos persisten en ~/qdrant_data)
-```bash
-docker rm qdrant
-
-# 5. Para ver logs
-```bash
-docker logs qdrant
