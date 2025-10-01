@@ -1,3 +1,4 @@
+
 # 1. Ejecutar Qdrant con volumen persistente (crea carpeta automáticamente)
 ```bash
 docker run -d \
