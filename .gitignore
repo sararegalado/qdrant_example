@@ -1,0 +1,30 @@
+# Datos de Qdrant (no subir a GitHub)
+qdrant_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Modelos de embeddings (pueden ser grandes)
+*.model
+sentence_transformers/
+
+# Logs
+*.log
